@@ -4,7 +4,7 @@ export const CardInfo = ({ icon, text }: { icon: any; text: string }) => {
     return (
 
 
-        <Card className="max-w-[200px] w-full">
+        <Card className="sm:max-w-[200px] w-full">
                 <CardBody>
                     <div className="flex justify-center items-center w-full h-full">
                         {icon}

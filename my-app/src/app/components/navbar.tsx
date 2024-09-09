@@ -33,6 +33,7 @@ export const NavBar = () => {
       isBordered
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}>
+
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? 'Fechar' : 'Abrir'}
@@ -43,7 +44,7 @@ export const NavBar = () => {
 
 
 
-      <NavbarContent className="hidden lg:flex gap-4" justify="center">
+      <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
           <Link color="foreground" href="#">
             Home
@@ -73,9 +74,9 @@ export const NavBar = () => {
             onClick={handleTheme}
             thumbIcon={({ isSelected, className }) =>
               isSelected ? (
-                <CiLight className={className} />
-              ) : (
                 <MdDarkMode className={className} />
+              ) : (
+                <CiLight className={className} />
               )
             }
           >

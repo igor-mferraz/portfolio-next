@@ -1,5 +1,5 @@
 'use client'
-import { Divider } from "@nextui-org/react"
+import {  Divider } from "@nextui-org/react"
 import Image from "next/image"
 import { BsDatabaseFillGear } from "react-icons/bs"
 import { IoIosDesktop } from "react-icons/io"
@@ -12,8 +12,9 @@ export const About = () => {
             <div className="flex-1 flex flex-col">
 
                 <div className="flex-1 flex justify-center items-center h-full">
+
                     <Image
-                        className="flex justify-center items-center rounded-full mt-2"
+                        className="flex justify-center items-center rounded-full mt-2 bg-transparent"
                         src="/assets/avatar.jpg"
                         alt="avatar"
                         width={200}
